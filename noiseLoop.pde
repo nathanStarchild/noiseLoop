@@ -38,6 +38,14 @@ static public class NoiseLoop {
       
     float ln = map(app.noise(nfx + xOff, nfy + yOff), 0, 1, min, max);
     return ln;
+  }  
+  
+  public void setMax(float m) {
+    max = m;
+  }
+  
+  public void setMin(float m) {
+    min = m;
   }
   
   public void pause(){
